@@ -22,7 +22,7 @@
 * 
 *		int m_A;
 *		int m_B;
-*	}
+*	};
 * 
 *	//全局函数重载+号
 *	Person operator+(Person &p1, Person &p2)
@@ -31,7 +31,7 @@
 *		temp.m_A = p1.m_A + p2.m_A;
 *		temp.m_B = p1.m_B + p2.m_B;
 *		return temp;
-*	}
+*	};
 * 
 *	//运算符重载 + 函数重载
 *	Person operator+(Person &p1, int num)
@@ -40,7 +40,7 @@
 *		temp.m_A = p1.m_A + num;
 *		temp.m_B = p1.m_B + num;
 *		return temp;
-*	}
+*	};
 * 
 *	//调用
 *	Person p3 = p1 + p2;
@@ -65,7 +65,7 @@
 *	private:
 *		int m_A;
 *		int m_B;
-*	}
+*	};
 * 
 *	//全局函数重载<<号
 *	ostream &operator<<(ostream &cout, Person &p)
@@ -113,7 +113,7 @@
 * 
 *	private:
 *		int m_Num;
-*	}
+*	};
 * 
 *	//重载左移运算符
 *	ostream& oprator<<(ostream& cout, MyInteger myint)
@@ -169,7 +169,7 @@
 *		}
 * 
 *		int *m_Age;
-*	}
+*	};
 * 
 *	//调用
 *	Person p1(18);
@@ -202,7 +202,7 @@
 * 
 *		string m_Name;
 *		int *m_Age;
-*	}
+*	};
 * 
 *	//调用
 *	Person p1("liruonan", 18);
@@ -225,7 +225,7 @@
 *		{
 *			cout << text << endl;
 *		}
-*	}
+*	};
 * 
 *	//调用
 *	MyPrint myPrint;

@@ -29,7 +29,7 @@
 *
 *   private:
 *       string m_BedRoom;
-*   }
+*   };
 *
 *   //全局函数
 *   void myFriend(Buiding *building)
@@ -54,7 +54,7 @@
 *
 *       Building *building;
 *
-*   }
+*   };
 *
 *   class Building
 *   {
@@ -76,13 +76,13 @@
 *
 *   private:
 *       string m_BedRoom;
-*   }
+*   };
 *
 *   //类外实现成员函数
 *   Building::Building()
 *   {
 *       m_sittingRoom = "客厅";
-*    }
+*    };
 *
 *   MyFriend::MyFriend()
 *   {
@@ -115,7 +115,7 @@
 *
 *   private:
 *       string m_BedRoom;
-*   }
+*   };
 *
 *
 */
