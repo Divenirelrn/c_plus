@@ -150,6 +150,8 @@
 	}
 * 
 *	cout << num << endl; //30次，加入reserve之后num=1
+* 
+* 
 *	
 *	
 *	
