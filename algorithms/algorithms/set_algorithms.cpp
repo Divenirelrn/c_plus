@@ -14,15 +14,15 @@
 *	v.push_back(40);
 * 
 *	vector<int>v2;
-*	v2.push_back(20);
+*	v2.push_back(10);
+*	v2.push_back(60);
 *	v2.push_back(30);
-*	v2.push_back(40);
-*	v2.push_back(50);
+*	v2.push_back(70);
 * 
 *	vector<int>vTarget;
 *	vTarget.resize(min(v.size(), v2.size()));
 * 
-*	vector<int>::iterator itEnd = set_intersection(v.begin(), v.end(), v2.begin(), v2.end(), vTarget.begin());
+*	vector<int>::iterator it = set_intersection(v.begin(), v.end(), v2.begin(), v2.end(), vTarget.begin());
 *	
 * set_union:
 *	求两个集合的并集
@@ -35,17 +35,17 @@
 *	v.push_back(40);
 * 
 *	vector<int>v2;
-*	v2.push_back(20);
+*	v2.push_back(10);
+*	v2.push_back(60);
 *	v2.push_back(30);
-*	v2.push_back(40);
-*	v2.push_back(50);
+*	v2.push_back(70);
 * 
 *	vector<int>vTarget;
 *	vTarget.resize(v.size() + v2.size());
 * 
-*	vector<int>::iterator itEnd = set_union(v.begin(), v.end(), v2.begin(), v2.end(), vTarget.begin());
+*	vector<int>::iterator it = set_union(v.begin(), v.end(), v2.begin(), v2.end(), vTarget.begin());
 * 
-* set_difference:
+* set_different:
 *	求两个集合的差集
 *	两个集合必须是有序序列
 * 
@@ -56,15 +56,15 @@
 *	v.push_back(40);
 * 
 *	vector<int>v2;
-*	v2.push_back(20);
+*	v2.push_back(10);
+*	v2.push_back(60);
 *	v2.push_back(30);
-*	v2.push_back(40);
-*	v2.push_back(50);
+*	v2.push_back(70);
 * 
 *	vector<int>vTarget;
 *	vTarget.resize(max(v.size(), v2.size()));
 * 
-*	vector<int>::iterator itEnd = set_difference(v.begin(), v.end(), v2.begin(), v2.end(), vTarget.begin());
+*	vector<int>::iterator it = set_different(v.begin(), v.end(), v2.begin(), v2.end(), vTarget.begin());
 * 
 * 
 * 

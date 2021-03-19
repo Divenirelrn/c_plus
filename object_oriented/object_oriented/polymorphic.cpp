@@ -67,7 +67,7 @@
 *		子类必须重写抽象类中的纯虚函数，否则也属于抽象类，无法实例化对象
 * 
 *	虚析构与纯虚析构：
-*		多态使用时，如果子类中有属性开辟到堆区，那么父类指针在释放时无法调用到子类的析构函数
+*		多态使用时，如果子类被开辟到堆区，那么父类指针在释放时无法调用到子类的析构函数
 * 
 *		解决方式：将父类的析构函数改为虚析构或纯虚析构
 * 
@@ -82,10 +82,50 @@
 *		{
 *			cout << "纯虚析构" << endl;
 *		}
+
+       示例代码：
+           class Base
+           {
+           public:
+               virtual void move()
+               {
+                   cout << "Base move" << endl;
+               }
+               //virtual void move() = 0;
+
+               virtual ~Base()
+               {
+                   cout << "Base析构调用"<< endl;
+               }
+           };
+
 * 
-*		
+*		   class Cat: public Base
+           {
+           public:
+           Cat(){}
+
+           Cat(int age)
+		   {
+			   this->age = new int(age);
+		   }
+
+			void move()
+			{
+				cout << "Cat move" << endl;
+			}
+
+			~Cat()
+			{
+				cout << "cat析构调用" << endl;
+			}
+
+			int *age;
+		};
 * 
-* 
+*        Base *base = new Cat;
+         base -> move();
+         delete base;
 * 
 * 
 * 

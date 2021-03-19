@@ -132,13 +132,13 @@
 *   //遍历
 *   for(vector<Person *>::iterator it = v.begin(); it != v.end(); it++)
 *   {
-*       cout << （*it）->m_Name << （*it）->m_Age << endl;
+*       cout << （*it）->m_Name << （*it）->m_Age << endl; //it指向第一个元素，*it为第一个元素
 *   }
 * 
 * 容器嵌套容器：
 *   void test()
 *   {
-        vector< vector <int>>v;
+        vector< vector <int> >v;
 
         //创建小容器
         vector<int>v1;
@@ -159,7 +159,7 @@
         v.push_back(v3);
         v.push_back(v4);
 
-        for(vector< vector<int>>::iterator it = v.begin(); it != v.end(); it++)
+        for(vector< vector<int> >::iterator it = v.begin(); it != v.end(); it++)
         {
             for(vector<int>::iterator vit = (*it).begin(); vit != (*it).end(); vit++)
             {

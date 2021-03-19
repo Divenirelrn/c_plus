@@ -32,7 +32,7 @@
 * 
 *	for_each(v.begin(), v.end(), print2()); //·Âº¯Êý
 *	
-* transform:
+* transform:¿½±´Ëã·¨
 *	#include<algorithm>
 * 
 *	class Transform

@@ -18,23 +18,5 @@
     <ClCompile Include="algorithms.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="traversal.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="find.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="sort.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="copy_replace.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="arithmetic_generation.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="set_algorithms.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

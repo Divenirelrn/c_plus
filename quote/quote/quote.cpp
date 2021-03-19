@@ -23,21 +23,66 @@
 *   指针作为形参的一种替代方案
 *   int swap(int &a, int &b)
 *   {
-*    }
+*   }
 *   swap(a,b);
 * 
 * 引用作函数返回值：
-*   不要返回局部变量的引用
+*   不能返回局部变量的引用(当返回一个引用时，被引用的对象不能超出作用域)
 *   函数的调用可以作为左值
 * 
+	void swap(int &a, int &b);
+	int& setValue(int i);
+
+	int arr[] = {1,2,3,4,5,6,7,8};
+
+	int main()
+	{
+		int a = 10, b = 20;
+		cout << "Before:" << a << " " << b << endl;
+		int &q1 = a, &q2 = b;
+
+		swap(q1, q2);
+		cout << "After:" << a << " " << b << endl;
+
+		cout << "before: ";
+		for(int i=0; i<8; i++)
+		{
+			cout << arr[i] << " ";
+		}
+		cout << endl;
+
+		setValue(1) = 10;
+
+		cout << "after ";
+		for(int i=0; i<8; i++)
+		{
+			cout << arr[i] << " ";
+		}
+		cout << endl;
+
+		return 0;
+	}
+
+	void swap(int &a, int &b)
+	{
+		int temp;
+		temp = a;
+		a = b;
+		b= temp;
+	}
+
+	int& setValue(int i)
+	{
+		return arr[i];
+	} 
+*   
+*   静态局部变量可以作为返回引用值：
 *   int& test()
 *   { 
 *       static int a = 10;
 *       return a;
 *   }
 * 
-*   int &ref = test();
-*   test() = 1000;
 * 
 * 引用的本质：
 *   引用的本质在c++内部实现是一个指针常量
@@ -50,12 +95,6 @@
 *   void showValue(const int &val)
 *   {
 *    }
-* 
-*   
-* 
-* 
-* 
-* 
 * 
 */
 

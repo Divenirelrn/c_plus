@@ -69,6 +69,10 @@
 *           }
 * 
 * 二进制文件：
+    函数原型：
+        stream& write(const char * buffer, int len);
+        istream& read( char *buffer, int len );
+
 *   写文件：
 *       #include <fstream>
 *       ofstream ofs; //创建流对象

@@ -15,7 +15,7 @@
 * 全局函数做友元：
 *   class Building
 *   {
-*       friend Friend(Buiding *building); //声明友元全局函数
+*       friend myFriend(Buiding *building); //声明友元全局函数
 *
 *   public:
 *       Building()

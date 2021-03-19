@@ -68,10 +68,10 @@
 *	};
 * 
 *	//全局函数重载<<号
-*	ostream &operator<<(ostream &cout, Person &p)
+*	ostream &operator<<(ostream &out, Person &p) //函数返回out的引用，因此可以链式编程
 *	{
-*		cout << p.m_A << m_B;
-*		return cout;
+*		out << p.m_A << m_B;
+*		return out;
 *	}
 * 
 *	//调用
@@ -94,7 +94,7 @@
 *		}
 * 
 *		//重载前置++运算符
-*		MyInteger& operator++() //返回引用，一直对一个数据进行递增操作（++(++myint)）
+*		MyInteger& operator++() //返回引用，一直对一个数据进行递增操作（++(++myint)）(与内置类型保持一致)
 *		{
 *			m_Num++;
 *			return *this;
@@ -103,7 +103,7 @@
 * 
 *		//重载后置++运算符
 *		MyInteger operator++(int) //int为占位参数，为了与前置递增运算符重载区分
-*								  //返回值
+*								  //返回值(与内置类型保持一致)
 *		{
 *			MyInteger temp = *this;
 *			m_Num++;
@@ -133,7 +133,7 @@
 		默认构造函数
 		默认析构函数
 		默认拷贝构造函数
-		赋值运算符operator=,对属性进行值拷贝（浅拷贝）
+		赋值运算符operator=,对属性进行值拷贝（浅拷贝,当类中具有指针成员时，两个对象的指针成员会指向同一块堆区地址）
 * 
 *	class Person
 *	{

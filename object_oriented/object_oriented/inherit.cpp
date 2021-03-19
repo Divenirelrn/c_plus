@@ -55,8 +55,23 @@
 * 
 * 菱形继承（钻石继承）：
 *	二义性：两个父类拥有相同的数据，需要加作用域加以区分
+    危害：
+        命名冲突：孙子类调用爷爷类的成员变量，但爸爸类与叔叔类都继承了爷爷类的该成员变量，因此孙子类继承了两份数据，调                  用时编译器无法正确区分到底是爸爸类还是叔叔类
+        内存冗余
 *	孙子继承了两份来自爷爷的数据：利用虚继承来解决
-*		class Alpaca: virtual public Animal {}; //虚基类
+        class Base()
+        {}
+
+        class Dog: virtual public Base
+        {}
+
+        class Cat: virtual public Base
+        {}
+
+*		class DogCat: public Dog, public Cat
+        {}
+
+        虚基类(Base):
 *		虚基类使数据变为一份
 *		vbptr:虚基类指针，指向vbtable(虚基类表)
 * 

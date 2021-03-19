@@ -72,7 +72,7 @@
 *		cout << *pos;
 *	}
 * 
-*	int num = s1.count(30); //统计
+*	int num = s1.count(30); //统计一个元素出现的次数，set只能为0或1
 * 
 * set与multiset的区别：
 *	set不允许有重复（会检测插入值）

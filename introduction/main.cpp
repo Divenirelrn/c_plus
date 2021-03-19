@@ -17,6 +17,13 @@ using namespace std;
  * 标识符：
  *   区分大小写
  *
+ * 后缀名：
+ *   unix: C, cc, c, cxx
+ *   GNU c++(linux): C, cc, c, cpp, cxx
+ *   Borland c++: Cpp
+ *   Microsoft Visual c++: cpp,cxx,cc
+ *
+ *
  */
 
 int main() {
