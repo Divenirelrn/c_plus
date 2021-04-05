@@ -1,3 +1,0 @@
-D:/files/github_projects/c++/array/cmake-build-debug/CMakeFiles/array.dir
-D:/files/github_projects/c++/array/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/files/github_projects/c++/array/cmake-build-debug/CMakeFiles/rebuild_cache.dir

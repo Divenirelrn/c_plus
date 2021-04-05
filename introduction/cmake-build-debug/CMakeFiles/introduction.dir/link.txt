@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\introduction.dir/objects.a
-D:\software\packages\mingw64\bin\ar.exe cr CMakeFiles\introduction.dir/objects.a @CMakeFiles\introduction.dir\objects1.rsp
-D:\software\packages\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\introduction.dir/objects.a -Wl,--no-whole-archive  -o introduction.exe -Wl,--out-implib,libintroduction.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\introduction.dir\linklibs.rsp
